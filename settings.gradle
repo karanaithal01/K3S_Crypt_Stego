@@ -1,0 +1,3 @@
+include ':K3S_ENCRYPT'
+include ':app'
+rootProject.name = "K3S"
