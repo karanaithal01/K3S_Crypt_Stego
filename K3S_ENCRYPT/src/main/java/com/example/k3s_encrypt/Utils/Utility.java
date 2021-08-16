@@ -170,7 +170,7 @@ public class Utility {
         return result;
     }
 
-    /**
+    /*
      * Convert the byte array to an int.
      *
      * @return : Integer
@@ -182,7 +182,7 @@ public class Utility {
 
     }
 
-    /**
+    /*
      * Convert the byte array to an int starting from the given offset.
      *
      * @return :  Integer

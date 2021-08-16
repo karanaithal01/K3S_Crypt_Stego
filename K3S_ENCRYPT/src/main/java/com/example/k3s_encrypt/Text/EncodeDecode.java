@@ -23,13 +23,6 @@ class EncodeDecode {
 
     /**
      * This method represent the core of 2 bit Encoding
-     *
-     * @return : byte encoded pixel array
-     * @parameter :  integer_pixel_array {The integer RGB array}
-     * @parameter : image_columns {Image width}
-     * @parameter : image_rows {Image height}
-     * @parameter : messageEncodingStatus {object}
-     * @parameter : progressHandler {A handler interface, for the progress bar}
      */
 
     private static byte[] encodeMessage(int[] integer_pixel_array, int image_columns, int image_rows,
@@ -99,11 +92,6 @@ class EncodeDecode {
 
     /**
      * This method implements the above method on the list of chunk image list.
-     *
-     * @return : Encoded list of chunk images
-     * @parameter : splitted_images {list of chunk images}
-     * @parameter : encrypted_message {string}
-     * @parameter : progressHandler {Progress bar handler}
      */
     public static List<Bitmap> encodeMessage(List<Bitmap> splitted_images,
                                              String encrypted_message, ProgressHandler progressHandler) {
@@ -184,12 +172,7 @@ class EncodeDecode {
 
     /**
      * This is the decoding method of 2 bit encoding.
-     *
-     * @return : Void
-     * @parameter : byte_pixel_array {The byte array image}
-     * @parameter : image_columns {Image width}
-     * @parameter : image_rows {Image height}
-     * @parameter : messageDecodingStatus {object}
+
      */
     private static void decodeMessage(byte[] byte_pixel_array, int image_columns,
                                       int image_rows, MessageDecodingStatus messageDecodingStatus) {
@@ -274,9 +257,7 @@ class EncodeDecode {
 
     /**
      * This method takes the list of encoded chunk images and decodes it.
-     *
-     * @return : encrypted message {String}
-     * @parameter : encodedImages {list of encode chunk images}
+
      */
 
     public static String decodeMessage(List<Bitmap> encodedImages) {
@@ -305,9 +286,7 @@ class EncodeDecode {
 
     /**
      * Calculate the numbers of pixel needed
-     *
-     * @return : The number of pixel {integer}
-     * @parameter : message {Message to encode}
+
      */
     public static int numberOfPixelForMessage(String message) {
         int result = -1;

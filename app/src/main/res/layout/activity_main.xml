@@ -6,19 +6,19 @@
 
     <Button
         android:id="@+id/encode_button"
-        android:layout_width="wrap_content"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="134dp"
         android:layout_marginTop="222dp"
-        android:layout_marginEnd="157dp"
+        android:layout_marginEnd="124dp"
         android:text="Encode" />
 
     <Button
         android:id="@+id/decode_button"
-        android:layout_width="wrap_content"
+        android:layout_width="123dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/encode_button"
         android:layout_alignEnd="@+id/encode_button"
